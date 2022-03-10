@@ -5,12 +5,25 @@ public class Operation {
     private final double num2;
     private final double result;
     private final String operand;
+    private final User user;
 
-    public Operation(double num1, double num2, String operand, double result) {
+    @Override
+    public String toString() {
+        return "Operation{" +
+                "num1=" + num1 +
+                ", num2=" + num2 +
+                ", result=" + result +
+                ", operand='" + operand + '\'' +
+                ", user=" + user +
+                '}';
+    }
+
+    public Operation(double num1, double num2, String operand, double result, User user) {
         this.num1 = num1;
         this.num2 = num2;
         this.result = result;
         this.operand = operand;
+        this.user = user;
     }
 
     public double getNum2() {

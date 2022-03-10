@@ -4,7 +4,7 @@ import by.tms.entity.User;
 import by.tms.storage.UserStorage;
 
 public class UserService {
-    private final UserStorage userStorage = new UserStorage();
+    private static final UserStorage userStorage = new UserStorage();
 
     public boolean add(User user) {
         if(userStorage.isExistsByLogin(user.getLogin())) {

@@ -22,4 +22,13 @@ public class User {
     public String getLogin() {
         return login;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", login='" + login + '\'' +
+                '}';
+    }
 }
