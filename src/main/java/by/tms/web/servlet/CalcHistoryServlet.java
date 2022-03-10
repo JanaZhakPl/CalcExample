@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/history")
-public class CalcHistory extends HttpServlet {
+@WebServlet(urlPatterns = "/history", name = "CalcHistoryServlet")
+public class CalcHistoryServlet extends HttpServlet {
     private final CalcService calcService = new CalcService();
 
     @Override

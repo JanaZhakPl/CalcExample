@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/calc")
+@WebServlet(urlPatterns = "/calc", name = "CalcServlet")
 public class CalcServlet extends HttpServlet {
 
     private final CalcService calcService = new CalcService();
