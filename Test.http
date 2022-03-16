@@ -1,14 +1,14 @@
 POST http://localhost:8080/registration
 Content-Type: application/x-www-form-urlencoded
 
-name=Ryhor&login=Ryhor&password=test
+name=Jana&login=JanaZ&password=1234
 
 ###
 
 POST http://localhost:8080/authorization
 Content-Type: application/x-www-form-urlencoded
 
-login=Ryhor&password=test
+login=JanaZ&password=1234
 
 ###
 
